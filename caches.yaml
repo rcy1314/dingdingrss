@@ -1,0 +1,83 @@
+cache:
+  Placeholder:
+    latest_id: this is placeholder
+  http://rss.ricterz.me/hacktivity:
+    latest_id: https://hackerone.com/reports/1810656
+  https://3gstudent.github.io/atom.xml:
+    latest_id: https://3gstudent.github.io/%E6%B8%97%E9%80%8F%E6%8A%80%E5%B7%A7-%E9%80%9A%E8%BF%87WSUS%E8%BF%9B%E8%A1%8C%E6%A8%AA%E5%90%91%E7%A7%BB%E5%8A%A8
+  https://blog.badsectorlabs.com/feeds/all.atom.xml:
+    latest_id: tag:blog.badsectorlabs.com,2023-02-13:/last-week-in-security-lwis-2023-02-13.html
+  https://blog.doyensec.com/atom.xml:
+    latest_id: https://blog.doyensec.com//2023/02/14/pesd-extension-public-release
+  https://blog.gentilkiwi.com/feed:
+    latest_id: http://blog.gentilkiwi.com/?p=3321
+  https://blog.redxorblue.com/atom.xml:
+    latest_id: tag:blogger.com,1999:blog-8176792450471116129.post-374315080104864386
+  https://blog.xpnsec.com/rss.xml:
+    latest_id: https://blog.xpnsec.com/building-a-mach-o-memory-loader-part-1/
+  https://casvancooten.com/posts/index.xml:
+    latest_id: https://casvancooten.com/posts/2021/10/so-you-wanna-hack-a-bank-global-central-bank-paces-certification-review/
+  https://devco.re/rss:
+    latest_id: https://devco.re/blog/2023/01/14/3rd-internship-program-recruit
+  https://exploit.ph/feeds/all.atom.xml:
+    latest_id: tag:exploit.ph,2022-05-09:/defending-the-three-headed-relay.html
+  https://gist.github.com/CCob.atom:
+    latest_id: tag:gist.github.com,2008:Gist/CCob/4b97f353f58d96e925c63b3909cbe8bd
+  https://gist.github.com/HarmJ0y.atom:
+    latest_id: tag:gist.github.com,2008:Gist/HarmJ0y/c5cf17def719d3b6406a89504ec518c4
+  https://gist.github.com/S3cur3Th1sSh1t.atom:
+    latest_id: tag:gist.github.com,2008:Gist/S3cur3Th1sSh1t/4c84557279ee23af89e40a9e41ee85d5
+  https://gist.github.com/aaaddress1.atom:
+    latest_id: tag:gist.github.com,2008:Gist/aaaddress1/20148c440c47a404b8d6e90a0f42e3ab
+  https://gist.github.com/coldfusion39.atom:
+    latest_id: tag:gist.github.com,2008:Gist/coldfusion39/b5a4deed7bda286dfdc5b37d5f9b4b32
+  https://gist.github.com/monoxgas.atom:
+    latest_id: tag:gist.github.com,2008:Gist/monoxgas/96a29562821978992b07e236379e07ab
+  https://gist.github.com/nullbind.atom:
+    latest_id: tag:gist.github.com,2008:Gist/nullbind/da995d81b1d8eea3ee5b601ee7f14542
+  https://gist.github.com/ujin5.atom:
+    latest_id: tag:gist.github.com,2008:Gist/ujin5/6b9a32eedc5a39d714a3a72f06efffe5
+  https://gist.github.com/xpn.atom:
+    latest_id: tag:gist.github.com,2008:Gist/xpn/5f497d2725a041922c427c3aaa3b37d1
+  https://github.com/Mr-Un1k0d3r.atom:
+    latest_id: tag:github.com,2008:IssueCommentEvent/26515820026
+  https://googleprojectzero.blogspot.com/feeds/posts/default:
+    latest_id: tag:blogger.com,1999:blog-4838136820032157985.post-6288849578901159797
+  https://itm4n.github.io/feed.xml:
+    latest_id: https://itm4n.github.io/insomnihack-2023-insobug/
+  https://niemand.com.ar/feed/:
+    latest_id: https://niemand.com.ar/?p=1386
+  https://pentestlab.blog/feed/atom/:
+    latest_id: http://pentestlab.blog/?p=29879
+  https://research.nccgroup.com/category/technical-advisory/feed/atom/:
+    latest_id: https://research.nccgroup.com/?p=17930
+  https://rss.app/feeds/rX5by85Q0daaYb6v.xml:
+    latest_id: 42de9c7dfe8a338fd31ed95056a7a61a
+  https://rsshub.app/project-zero-issues:
+    latest_id: https://bugs.chromium.org/p/project-zero/issues/detail?id=2425
+  https://s3cur3th1ssh1t.github.io/feed.xml:
+    latest_id: https://s3cur3th1ssh1t.github.io/SystemFunction032_Shellcode
+  https://secret.club/feed.xml:
+    latest_id: https://secret.club/2022/08/29/bootkitting-windows-sandbox
+  https://syst3mfailure.io/feed.xml:
+    latest_id: https://syst3mfailure.io/corjail
+  https://the-deniss.github.io/feed.xml:
+    latest_id: https://the-deniss.github.io/posts/2023/02/09/elevation-of-privileges-from-everyone-through-avast-av-sandbox-to-system-amppl
+  https://wechat2rss.xlab.app/feed/059ae07ca76f11c6e9f9fad7698ab205b3b039c8.xml:
+    latest_id: https://mp.weixin.qq.com/s?__biz=MzkyMTI0NjA3OA==&mid=2247490566&idx=1&sn=6383417d423b1c8cad3048772cd34758&chksm=c187dc17f6f05501b3fb7d4d9c8f29b7c3e5495bb87aaf7a73b9fad74f9013c24b9de2fac598&scene=58&subscene=0#rd
+  https://wechat2rss.xlab.app/feed/923c0e2f33b6d39c8a826a90f185725f0edb10e8.xml:
+    latest_id: https://mp.weixin.qq.com/s?__biz=MzA5NDYyNDI0MA==&mid=2651958838&idx=1&sn=c8f35c1839568b1906ea392cc3d2cc08&chksm=8baecea9bcd947bf895ce171fc34c6e212dcbc3ff94f790e7190f45bcb17f4911315a89494d4&scene=58&subscene=0#rd
+  https://wechat2rss.xlab.app/feed/947b46dba9754e10360d267a5ee9a87597e0bafe.xml:
+    latest_id: https://mp.weixin.qq.com/s?__biz=MzI2MjQ1NTA4MA==&mid=2247489309&idx=1&sn=f43c81f0002fcb4364631a3bdb6325df&chksm=ea4bbd5add3c344cb9c339998eaecc84c39c39f38a930958c93fd1d0e8e5c4973203f8316f2f&scene=58&subscene=0#rd
+  https://wiki.ioin.in/atom:
+    latest_id: https://govuln.com/news/url/ydPG
+  https://www.cobaltstrike.com/blog/feed/atom/:
+    latest_id: https://www.cobaltstrike.com/?p=11892
+  https://www.microsoft.com/en-us/security/blog/feed/:
+    latest_id: https://www.microsoft.com/en-us/security/blog/?p=125833
+  https://www.rcesecurity.com/feed/:
+    latest_id: https://www.rcesecurity.com/?p=1314
+  https://www.zerodayinitiative.com/blog/?format=rss:
+    latest_id: 5894c269e4fcb5e65a1ed623:58a5b38cb3db2bd67b608658:63ee39cb34b1822a9734333c
+  https://xlab.tencent.com/cn/feed/:
+    latest_id: https://xlab.tencent.com/cn/2021/06/21/xlab-21-001/
