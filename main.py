@@ -12,12 +12,13 @@ ssl._create_default_https_context = ssl._create_unverified_context
 
 class RSSBot(object):
     def __init__(self):
-       
+        dingToken = os.environ.get("DD_TOKEN").strip()
+        dingSecret = os.environ.get("DD_SECRET").strip()
         self._caches = self._loadYaml("caches.yaml")
         self._subscrites = self._loadYaml("subscrites.yaml")
-        webhook = "https://qyapi.weixin.qq.com/cgi-bin/webhook/send?key=c898146b-a695-4d20-aeef-95e0c9c4c33f"
+        webhook = "https://oapi.dingtalk.com/robot/send?access_token=" + dingToken
         self._cardItems = []
-        self._chatbot = DingtalkChatbot(webhook=webhook,)
+        self._chatbot = DingtalkChatbot(webhook=webhook, secret=dingSecret)
 
     @staticmethod
     def _loadYaml(yamlFile):
