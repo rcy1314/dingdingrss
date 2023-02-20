@@ -34,8 +34,4 @@ jobs:
         git config --global user.name rcy1314
         git add .
         git commit -m "Update caches" -a
-    - name: Push changes
-      uses: ad-m/github-push-action@master
-      with:
-        branch: main
-        github_token: ${{ secrets.GITHUB_TOKEN }}
+
