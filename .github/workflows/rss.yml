@@ -2,11 +2,9 @@ name: DingRSS
 
 on:
   push:
-  branches:
-    - main
+    branches:  [ main ]
   schedule:
     - cron: '0 */6 * * *'
-  workflow_dispatch:
 
 jobs:
   build:
